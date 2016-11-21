@@ -17,6 +17,11 @@
 # limitations under the License.
 #
 
+# installs python and virtualenv
+python_runtime '2'
+
+python_virtualenv '/opt/myapp/.env'
+
 # create base directory of agent even if it isn't installed yet
 directory "#{node['aws-cwlogs']['path']}/etc" do
   recursive true
@@ -62,7 +67,7 @@ end
 # install aws cloudwatch logs agent
 execute 'Install CloudWatch Logs Agent' do
    command "#{node['aws-cwlogs']['path']}/awslogs-agent-setup.py -n -r #{node['aws-cwlogs']['region']} -c /tmp/awslogs.cfg"
-   not_if { system 'pgrep -f awslogs' }
+   not_if { system 'pgrep -f aws-logs-agent-setup' }
 end
 
 # restart the agent service in the end to ensure that
