@@ -7,9 +7,9 @@ Agent and deploy it's configurations automatically.
 
 ## Usage
 
-Add this cookbook to your base recipe:
+Add this repository to your Berksfile:
 ```ruby
-cookbook 'aws-cloudwatchlogs', '~> 1.1.4'
+cookbook 'aws-cloudwatchlogs', git: 'https://github.com/pmorgado/chef-cloudwatchlogs.git'
 ```
 
 You need to configure the following node attributes via an `environment` or `role`:
@@ -70,9 +70,10 @@ For more deployment details about AWS CloudWatch Logs, please visit the [AWS Clo
 
 ## Requirements
 
-### Platform
+### Platforms
 
-* Ubuntu 14.04
+* CentoS 6.6
+* Amazon
 
 ## Attributes
 
@@ -107,7 +108,7 @@ Amazon Web Services and AWS are trademarks of Amazon.com, Inc. or
 its affiliates in the United States and/or other countries.
 
    [aws-cloudwatch-url]: https://aws.amazon.com/cloudwatch/
-   [chef-cloudwatchlogs-license-url]: https://github.com/amalucelli/chef-cloudwatchlogs/blob/markdown/LICENSE
-   [chef-cloudwatchlogs-runtime-url]: https://github.com/amalucelli/chef-cloudwatchlogs
+   [chef-cloudwatchlogs-license-url]: https://github.com/pmorgado/chef-cloudwatchlogs/blob/markdown/LICENSE
+   [chef-cloudwatchlogs-runtime-url]: https://github.com/pmorgado/chef-cloudwatchlogs
    [license-badge]: https://img.shields.io/badge/license-apache-757575.svg?style=flat-square
    [runtime-badge]: https://img.shields.io/badge/runtime-ruby-orange.svg?style=flat-square

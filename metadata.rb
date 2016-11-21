@@ -1,6 +1,6 @@
 name             'aws-cloudwatchlogs'
 maintainer       'Pedro Morgado'
-license 'Apache 2.0'
+license          'Apache 2.0'
 maintainer_email 'pedrombmorgado@gmail.com'
 license          'All rights reserved'
 description      'Installs/Configures AWS CloudWatch Logs Agent'

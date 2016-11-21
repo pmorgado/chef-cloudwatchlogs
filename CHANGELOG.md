@@ -1,6 +1,9 @@
 Changes
 =======
 
+# 1.1.5 / 2016-11-21
+* Supporting amazon linux
+
 # 1.1.4 / 2016-11-07
 * Implementing `logging_config_file` configuration, that overrides the default logging configuration to a WARNING value.
 
