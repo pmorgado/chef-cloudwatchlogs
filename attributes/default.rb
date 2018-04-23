@@ -24,3 +24,6 @@ default['aws-cwlogs']['aws_secret_access_key'] = nil
 
 # AWS CloudWatch Logs
 default['aws-cwlogs']['path'] = '/var/awslogs'
+
+# https://github.com/poise/poise-python/issues/107
+force_override['poise-python']['options']['pip_version'] = '9.0.3'
